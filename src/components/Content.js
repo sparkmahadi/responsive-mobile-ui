@@ -2,6 +2,9 @@ import React from 'react';
 import ContentDetails from './ContentDetails';
 import { TiSocialYoutube } from 'react-icons/ti';
 import { BsChevronDown } from 'react-icons/bs';
+import Business from './Business';
+import Music from './Music';
+import NFTs from './NFTs';
 
 const Content = () => {
     const contents = [
@@ -106,15 +109,25 @@ const Content = () => {
             </div>
 
             <div className="border-2 rounded-lg my-5 px-5">
-                <div className="flex justify-between items-center">
-                    <TiSocialYoutube className='w-6 h-6' />
-                    <div className="p-2 w-full text-center">
-                        <h5>Speed Training Playlist</h5>
-                        <p className='text-sm'>Get faster for any sport with these speed tips</p>
+                <div className='py-5'>
+                    <div className="flex justify-between items-center">
+                        <TiSocialYoutube className='w-6 h-6' />
+                        <div className="">
+                            <h5>Racing people for $$$</h5>
+                        </div>
+                        <BsChevronDown className='w-6 h-6'/>
                     </div>
                 </div>
             </div>
+            
+            <h3 className='text-center text-xl font-semibold'>Business</h3>
+            <Business></Business>
 
+            <h3 className='text-center text-xl font-semibold'>Music</h3>
+            <Music></Music>
+
+            <h3 className='text-center text-xl font-semibold'>NFT's</h3>
+            <NFTs></NFTs>
         </div>
     );
 };

@@ -20,7 +20,7 @@ const Profile = () => {
             <p class="mt-1"> Created by different elements ⚛️ Athlete & CEO </p>
             <p class="mt-1 flex items-center gap-1"><MdLocationPin /><span>Raleigh, NC</span></p>
 
-            <div className='grid grid-cols-5 md:grid-cols-10 gap-5 my-2'>
+            <div className='grid grid-cols-5 md:grid-cols-10 gap-5 my-2 text-white'>
                 <div className='border-white rounded-full p-3 border-2'>
                     <MdEmail className='w-6 h-6'/>
                 </div>

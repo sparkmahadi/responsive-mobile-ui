@@ -10,12 +10,13 @@ const ContentDetails = ({ content }) => {
                     <img className="absolute object-cover w-full h-full" src={img} alt='' />
                 </div>
                 <div className="p-5">
-                    <h5 className="font-medium"> {name} </h5>
-                    <p className="text-sm"> {details} </p>
+                    <h5 className="font-medium text-gray-200"> {name} </h5>
+                    <p className="text-sm text-gray-400"> {details} </p>
                     <button className="bg-white px-5 py-3 text-gray-800 rounded-lg mt-6">
                         <span className='flex items-center gap-3'>
                             <AiTwotoneHeart />
-                            <p>Subscribe to Unlock</p>
+                            <p className='hidden md:block'>Subscribe to Unlock</p>
+                            <p className='md:hidden'>Subscribe</p>
                         </span>
                     </button>
                 </div>

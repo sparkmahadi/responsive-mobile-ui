@@ -6,7 +6,7 @@ import { faArrowUpFromBracket, faHeart } from '@fortawesome/free-solid-svg-icons
 const Navbar = () => {
     return (
         <div className=''>
-            <div className="fixed right-[580px] left-[580px] z-20">
+            <div className="fixed top-5 right-5 left-5 md:left-10 md:right-10 max-w-3xl mx-auto z-20">
                 <div className="flex justify-between">
                     <div>
                         <button className="rounded-full h-10 w-10 bg-white relative">

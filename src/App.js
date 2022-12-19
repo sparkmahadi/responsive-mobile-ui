@@ -6,8 +6,8 @@ import Profile from './components/Profile';
 
 function App() {
   return (
-    <div className='bg-gray-900'>
-      <div className='lg:mx-[500px] px-5 lg:px-20'>
+    <div className='bg-gray-900 font-tertiary'>
+      <div className='max-w-3xl mx-auto px-5 md:px-10 lg:px-0'>
         <Navbar></Navbar>
         <Profile></Profile>
         <Content></Content>

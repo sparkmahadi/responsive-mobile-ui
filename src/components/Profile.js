@@ -7,20 +7,20 @@ import { BsDiscord, BsLinkedin } from 'react-icons/bs';
 
 const Profile = () => {
     return (
-        <div className='text-white relative flex flex-col items-center'>
+        <div className='text-gray-400 relative flex flex-col items-center pt-7 font-tertiary'>
             <div className="avatar">
                 <div className="w-24 rounded-full">
                     <img src="man.png" alt='' />
                 </div>
             </div>
-            <div className='flex items-center justify-center gap-2'>
-                <h1 class="text-xl"> J Johnson Jr </h1>
-                <MdVerified className='w-4 h-4 mt-1 text-blue-600' />
+            <div className='flex items-center justify-center gap-1'>
+                <h1 class="text-xl font-semibold text-white"> J Johnson Jr </h1>
+                <MdVerified className='w-5 h-5 mt-1 text-blue-600' />
             </div>
             <p class="mt-1"> Created by different elements ⚛️ Athlete & CEO </p>
             <p class="mt-1 flex items-center gap-1"><MdLocationPin /><span>Raleigh, NC</span></p>
 
-            <div className='grid grid-cols-10 gap-5 my-2'>
+            <div className='grid grid-cols-5 md:grid-cols-10 gap-5 my-2'>
                 <div className='border-white rounded-full p-3 border-2'>
                     <MdEmail className='w-6 h-6'/>
                 </div>

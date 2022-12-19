@@ -2,6 +2,7 @@ import React from 'react';
 import ContentDetails from './ContentDetails';
 import { TiSocialYoutube } from 'react-icons/ti';
 import { BsChevronDown } from 'react-icons/bs';
+import { FaComments } from 'react-icons/fa';
 import Business from './Business';
 import Music from './Music';
 import NFTs from './NFTs';
@@ -24,6 +25,28 @@ const Content = () => {
             img: 'man.png'
         },
     ]
+
+    const nft = [
+        {
+            name: 'J Johnson Jr on the moon',
+            details: 'Buy a collectible 1 of 1 NFT designed by me!',
+            img: 'nft1.png',
+            price: 777
+        },
+        {
+            name: " J Johnson Jr's Dream",
+            details: 'Buy a collectible 1 of 1 NFT designed by me!',
+            img: 'nft2.png',
+            price: 777
+        },
+        {
+            name: " Nike ZoomX Invincible Run Flyknit",
+            details: ' New Nike running Shoes 💨 ',
+            img: 'nft3.jfif',
+            price: 180
+        }
+    ]
+
     return (
         <div className='text-white pb-6'>
             <h3 className="font-bold mb-2 mt-6 text-center"> Exclusive Content </h3>
@@ -66,7 +89,7 @@ const Content = () => {
                         <div className="p-2 mx-auto">
                             <h5>Workout Vlog With Batman!</h5>
                         </div>
-                        <BsChevronDown className='w-6 h-6'/>
+                        <BsChevronDown className='w-6 h-6' />
                     </div>
                     <div className=''>
                         <iframe className='w-full h-96' title='youtube-video' src="https://www.youtube.com/embed/fJGDnvoLKFA?mute=0&amp;autoplay=0" allowFullScreen="allowfullscreen" allow="autoplay; fullscreen; picture-in-picture"></iframe>
@@ -74,7 +97,7 @@ const Content = () => {
                 </div>
             </div>
 
-                {/* form */}
+            {/* form */}
             <div className="border-2 rounded-lg my-5 px-5">
                 <div className='py-3'>
                     <div className="text-center mb-6">
@@ -115,19 +138,107 @@ const Content = () => {
                         <div className="">
                             <h5>Racing people for $$$</h5>
                         </div>
-                        <BsChevronDown className='w-6 h-6'/>
+                        <BsChevronDown className='w-6 h-6' />
                     </div>
                 </div>
             </div>
-            
+
             <h3 className='text-center text-xl font-semibold'>Business</h3>
             <Business></Business>
 
             <h3 className='text-center text-xl font-semibold'>Music</h3>
             <Music></Music>
 
-            <h3 className='text-center text-xl font-semibold'>NFT's</h3>
-            <NFTs></NFTs>
+            <h3 className='text-center text-xl font-semibold mb-5'>NFT's</h3>
+            <div className='grid grid-cols-1 gap-5'>
+                {
+                    nft.map((data, i) => <NFTs key={i} data={data}></NFTs>)
+                }
+            </div>
+
+            <div className="border-2 rounded-lg my-5 px-5">
+                <div className='py-5'>
+                    <div className="flex justify-between items-center">
+                        <FaComments className='w-10 h-10' />
+                        <div className="">
+                            <h5 className='font-semibold'>Critique your running form 🏃 </h5>
+                            <p>$10</p>
+                        </div>
+                        <div>
+                            <button className="bg-white px-7 py-3 text-gray-800 rounded-lg w-full">
+                                Request Me
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="border-2 rounded-lg my-5 px-5">
+                <div className='py-3'>
+                    <div className="flex justify-between items-center mb-6">
+                        <TiSocialYoutube className='w-6 h-6' />
+                        <div className="p-2 mx-auto">
+                            <h5 className='font-semibold'>Wishing Music Video</h5>
+                        </div>
+                        <BsChevronDown className='w-6 h-6'/>
+                    </div>
+                    <div className=''>
+                        <iframe className='w-full h-96' title='youtube-video' src="https://www.youtube.com/embed/kFpk7Ho7QEw?mute=0&autoplay=0" allowFullScreen="allowfullscreen" allow="autoplay; fullscreen; picture-in-picture"></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div className="border-2 rounded-lg my-5 px-5">
+                <div className='py-3'>
+                    <div className="flex justify-between items-center mb-6">
+                        <TiSocialYoutube className='w-6 h-6' />
+                        <div className="p-2 mx-auto">
+                            <h5 className='font-semibold'>Youtube</h5>
+                        </div>
+                        <BsChevronDown className='w-6 h-6'/>
+                    </div>
+                    <div className=''>
+                        <iframe className='w-full h-96' title='youtube-video' src="https://www.youtube.com/embed/kQPBfyHxK1k?mute=0&autoplay=0" allowFullScreen="allowfullscreen" allow="autoplay; fullscreen; picture-in-picture"></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div className="border-2 rounded-lg my-5 px-5">
+                <div className='py-5'>
+                    <div className="flex justify-between items-center">
+                        <FaComments className='w-12 h-12' />
+                        <div className="w-2/3 px-10">
+                            <h5 className='font-semibold'>Link On Pillar </h5>
+                            <p>Have your link on my Pillar page. I have 15k+ visits</p>
+                            <p>$500</p>
+                        </div>
+                        <div>
+                            <button className="bg-white px-7 py-3 text-gray-800 rounded-lg w-full">
+                                Request Me
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="border-2 rounded-lg my-5 px-5">
+                <div className='py-5'>
+                    <div className="flex justify-between items-center">
+                        <FaComments className='w-12 h-12' />
+                        <div className="w-2/3 px-10">
+                            <h5 className='font-semibold'>Follow back</h5>
+                            <p>I'll follow you back on ig</p>
+                            <p>$222</p>
+                        </div>
+                        <div>
+                            <button className="bg-white px-7 py-3 text-gray-800 rounded-lg w-full">
+                                Request Me
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     );
 };

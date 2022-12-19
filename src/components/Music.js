@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { FaTwitch, FaMusic, FaSpotify, FaAppStoreIos} from 'react-icons/fa';
+import { FaMusic, FaSpotify} from 'react-icons/fa';
 import { BsChevronDown} from 'react-icons/bs';
 import { TiSocialYoutube } from 'react-icons/ti';
 
@@ -13,12 +13,12 @@ const Music = () => {
                     <div className="flex justify-between items-center mb-6">
                         <FaSpotify className='w-6 h-6' />
                         <div className="p-2 mx-auto">
-                            <h5>Workout Vlog With Batman!</h5>
+                            <h5>Wishing - King Han</h5>
                         </div>
                         <BsChevronDown className='w-6 h-6'/>
                     </div>
                     <div className=''>
-                        <iframe className='w-full h-96' title='youtube-video' src="https://www.youtube.com/embed/fJGDnvoLKFA?mute=0&amp;autoplay=0" allowFullScreen="allowfullscreen" allow="autoplay; fullscreen; picture-in-picture"></iframe>
+                    <iframe title='audio' src="https://open.spotify.com/embed/album/1R78rI7RSA3siUu4bBLw09" frameborder="0" allowtransparency="true" allow="encrypted-media" width="100%" height="300"></iframe>
                     </div>
                 </div>
             </div>

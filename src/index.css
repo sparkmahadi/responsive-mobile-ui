@@ -29,3 +29,21 @@ code {
 .font-tertiary{
   font-family: 'Montserrat', sans-serif;
 }
+
+.font-mini{
+  font-size: 12px;
+}
+
+p{
+  font-size: 13px;
+}
+
+h5{
+  color: white !important;
+}
+
+/* @media only screen and (max-width: 1023px) {
+  #hide-scroll{
+    display: none !important;
+  }
+} */

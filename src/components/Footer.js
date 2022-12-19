@@ -3,7 +3,7 @@ import React from 'react';
 const Footer = () => {
     return (
         <div className='text-gray-500 flex justify-center items-center gap-3 pt-20 pb-10'>
-            <p className='font-semibold'>Powered by</p>
+            <p className='font-medium'>Powered by</p>
             <div>
                 <svg className='w-20' viewBox="0 0 565 151" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M42.2917 147.017L0 122.556L42.2917 98L84.5833 122.556L42.2917 147.017Z" fill="gray" fill-opacity="0.5">

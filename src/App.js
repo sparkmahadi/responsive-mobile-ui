@@ -7,7 +7,7 @@ import Profile from './components/Profile';
 function App() {
   return (
     <div className='bg-gray-900 font-tertiary'>
-      <div className='max-w-3xl mx-auto px-5 md:px-10 lg:px-0'>
+      <div className='max-w-2xl mx-auto px-5 md:px-0'>
         <Navbar></Navbar>
         <Profile></Profile>
         <Content></Content>

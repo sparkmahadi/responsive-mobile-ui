@@ -13,7 +13,7 @@ const Music = () => {
                     <div className="flex justify-between items-center mb-6">
                         <FaSpotify className='w-6 h-6' />
                         <div className="p-2 mx-auto">
-                            <h5 className='font-semibold text-gray-200'>Wishing - King Han</h5>
+                            <h5 className='font-medium text-gray-300'>Wishing - King Han</h5>
                         </div>
                         <BsChevronDown className='w-6 h-6'/>
                     </div>
@@ -27,8 +27,8 @@ const Music = () => {
                 <div className="flex justify-between items-center">
                     <FaMusic className='w-6 h-6' />
                     <div className="p-3 w-full text-center">
-                        <h5 className='font-semibold text-gray-200'>Stream My song!</h5>
-                        <p className='text-sm'>Available everywhere!</p>
+                        <h5 className='font-medium text-gray-300'>Stream My song!</h5>
+                        <p className='font-mini'>Available everywhere!</p>
                     </div>
                 </div>
             </div>
@@ -38,7 +38,7 @@ const Music = () => {
                     <div className="flex justify-between items-center mb-6">
                         <TiSocialYoutube className='w-6 h-6' />
                         <div className="p-2 mx-auto">
-                            <h5 className='font-semibold text-gray-200'>Wishing Music Video</h5>
+                            <h5 className='font-medium text-gray-300'>Wishing Music Video</h5>
                         </div>
                         <BsChevronDown className='w-6 h-6'/>
                     </div>

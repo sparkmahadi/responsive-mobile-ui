@@ -10,12 +10,12 @@ const NFTs = ({data}) => {
                     <img className="absolute object-cover w-full h-full" src={img} alt='' />
                 </div>
                 <div className="p-5">
-                    <h5 className="font-medium text-gray-200"> {name} </h5>
-                    <p className="text-sm"> {details} </p>
+                    <h5 className="font-medium text-gray-300"> {name} </h5>
+                    <p className="font-mini"> {details} </p>
                     <button className="bg-white px-5 py-3 text-gray-800 rounded-lg mt-6">
-                        <span className='flex items-center gap-3'>
-                            <p>Buy for ${price}</p>
-                            <BsBoxArrowUpRight />
+                        <span className='flex items-center justify-center gap-3'>
+                            <p className='whitespace-nowrap'>Buy for ${price}</p>
+                            <BsBoxArrowUpRight className='w-3 h-3'/>
                         </span>
                     </button>
                 </div>
